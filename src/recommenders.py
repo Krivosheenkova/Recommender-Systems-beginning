@@ -158,7 +158,8 @@ class MainRecommender:
 
     def get_similar_items_recommendation(self, user, N=5):
         """Рекомендуем товары, похожие на топ-N купленных юзером товаров"""
-
+        self._update_dict(user_id=user)
+        
         top_users_purchases = self.top_purchases[self.top_purchases[USER_COL] == user].head(N)
 
         res = top_users_purchases[ITEM_COL].apply(lambda x: self.id_to_itemid[
@@ -171,7 +172,8 @@ class MainRecommender:
     
     def get_similar_users_recommendation(self, user, N=5):
         """Рекомендуем топ-N товаров, среди купленных похожими юзерами"""
-
+        self._update_dict(user_id=user)
+        
         res = []
 
         # Находим топ-N похожих пользователей
