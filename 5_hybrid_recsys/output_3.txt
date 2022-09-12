@@ -1,0 +1,173 @@
+...
+USER_ID: 2421
+predictions:
+822675 819518 824915 825556 824642 820082 821974 819845 821730 825494 
+precision@k50: 0.2
+recall@50: 0.002352941176470588
+USER_ID: 2424
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.004048582995951417
+USER_ID: 2425
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.00625
+USER_ID: 2437
+predictions:
+822675 819845 819518 821465 824915 825556 824642 821974 820082 821007 
+precision@k50: 0.2
+recall@50: 0.007194244604316547
+USER_ID: 2448
+predictions:
+822675 821974 819518 825556 824915 824642 819845 821730 820082 821695 
+precision@k50: 0.2
+recall@50: 0.003048780487804878
+USER_ID: 2451
+predictions:
+822675 819845 821974 825556 824915 819518 822178 824642 821730 824037 
+precision@k50: 0.2
+recall@50: 0.003278688524590164
+USER_ID: 2455
+Number of user feature rows does not equal the number of users
+USER_ID: 2455
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.007692307692307693
+USER_ID: 2456
+Number of user feature rows does not equal the number of users
+USER_ID: 2457
+Number of user feature rows does not equal the number of users
+USER_ID: 2458
+Number of user feature rows does not equal the number of users
+USER_ID: 2459
+Number of user feature rows does not equal the number of users
+USER_ID: 2460
+Number of user feature rows does not equal the number of users
+USER_ID: 2461
+Number of user feature rows does not equal the number of users
+USER_ID: 2462
+Number of user feature rows does not equal the number of users
+USER_ID: 2463
+Number of user feature rows does not equal the number of users
+USER_ID: 2464
+Number of user feature rows does not equal the number of users
+USER_ID: 2465
+Number of user feature rows does not equal the number of users
+USER_ID: 2466
+Number of user feature rows does not equal the number of users
+USER_ID: 2467
+Number of user feature rows does not equal the number of users
+USER_ID: 2467
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.0016750418760469012
+USER_ID: 2468
+Number of user feature rows does not equal the number of users
+USER_ID: 2468
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.005434782608695652
+USER_ID: 2469
+Number of user feature rows does not equal the number of users
+USER_ID: 2470
+Number of user feature rows does not equal the number of users
+USER_ID: 2471
+Number of user feature rows does not equal the number of users
+USER_ID: 2471
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.0125
+USER_ID: 2472
+Number of user feature rows does not equal the number of users
+USER_ID: 2473
+Number of user feature rows does not equal the number of users
+USER_ID: 2474
+Number of user feature rows does not equal the number of users
+USER_ID: 2475
+Number of user feature rows does not equal the number of users
+USER_ID: 2476
+Number of user feature rows does not equal the number of users
+USER_ID: 2477
+Number of user feature rows does not equal the number of users
+USER_ID: 2478
+Number of user feature rows does not equal the number of users
+USER_ID: 2478
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.005025125628140704
+USER_ID: 2479
+Number of user feature rows does not equal the number of users
+USER_ID: 2479
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.0021551724137931034
+USER_ID: 2480
+Number of user feature rows does not equal the number of users
+USER_ID: 2481
+Number of user feature rows does not equal the number of users
+USER_ID: 2481
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.004761904761904762
+USER_ID: 2482
+Number of user feature rows does not equal the number of users
+USER_ID: 2482
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.004273504273504274
+USER_ID: 2483
+Number of user feature rows does not equal the number of users
+USER_ID: 2484
+Number of user feature rows does not equal the number of users
+USER_ID: 2485
+Number of user feature rows does not equal the number of users
+USER_ID: 2486
+Number of user feature rows does not equal the number of users
+USER_ID: 2486
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.0025575447570332483
+USER_ID: 2487
+Number of user feature rows does not equal the number of users
+USER_ID: 2488
+Number of user feature rows does not equal the number of users
+USER_ID: 2489
+Number of user feature rows does not equal the number of users
+USER_ID: 2490
+Number of user feature rows does not equal the number of users
+USER_ID: 2491
+Number of user feature rows does not equal the number of users
+USER_ID: 2492
+Number of user feature rows does not equal the number of users
+USER_ID: 2493
+Number of user feature rows does not equal the number of users
+USER_ID: 2494
+Number of user feature rows does not equal the number of users
+USER_ID: 2495
+Number of user feature rows does not equal the number of users
+USER_ID: 2496
+Number of user feature rows does not equal the number of users
+USER_ID: 2497
+Number of user feature rows does not equal the number of users
+USER_ID: 2497
+predictions:
+822675 819845 821974 825556 819518 824915 824642 824037 821730 822178 
+precision@k50: 0.2
+recall@50: 0.00425531914893617
+USER_ID: 2498
+Number of user feature rows does not equal the number of users
+USER_ID: 2499
+Number of user feature rows does not equal the number of users
+USER_ID: 2500
+Number of user feature rows does not equal the number of users
