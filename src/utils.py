@@ -2,7 +2,7 @@
 
 import numpy as np
 
-def prefilter_items(data, item_features, take_n_popular=5000):
+def prefilter_items(data, item_features, take_n_popular=5000, fake_id=99999):
 
     print('== Starting prefilter info ==')
     n_users = data.user_id.nunique()
@@ -65,7 +65,7 @@ def prefilter_items(data, item_features, take_n_popular=5000):
     top = popularity.sort_values('n_sold', ascending=False).head(take_n_popular).item_id.tolist()
     
     # Insert fake item_id, if user have bought from top then user have been "bought" this item already
-    data.loc[~data['item_id'].isin(top), 'item_id'] = 999999
+    data.loc[~data['item_id'].isin(top), 'item_id'] = fake_id
 
     # take n poplar items
     if take_n_popular:
@@ -82,7 +82,11 @@ def prefilter_items(data, item_features, take_n_popular=5000):
     print('# items: {}'.format(n_items))
     print('Sparsity: {:4.3f}%'.format(sparsity))
     end_columns = set(data.columns.tolist())
-    print('new_columns:', 
+    print(bold('new_columns:'), 
           end_columns-start_columns)
 
     return data
+
+def bold(string: str) -> str:
+    """returns bold string"""
+    return '\033[1m'+string+'\033[0m'

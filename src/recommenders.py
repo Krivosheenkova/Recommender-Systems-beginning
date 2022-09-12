@@ -23,17 +23,18 @@ class MainRecommender:
         Матрица взаимодействий user-item
     """
 
-    def __init__(self, data, weighting=True):
-
+    def __init__(self, data, weighting=None,fake_id=99999):
+        
+        self.fake_id = fake_id
         # Топ покупок каждого юзера
         self.top_purchases = data.groupby([USER_COL, ITEM_COL])['quantity'].count().reset_index()
         self.top_purchases.sort_values('quantity', ascending=False, inplace=True)
-        self.top_purchases = self.top_purchases[self.top_purchases[ITEM_COL] != 999999]
+        self.top_purchases = self.top_purchases[self.top_purchases[ITEM_COL] != self.fake_id]
 
         # Топ покупок по всему датасету
         self.overall_top_purchases = data.groupby(ITEM_COL)['quantity'].count().reset_index()
         self.overall_top_purchases.sort_values('quantity', ascending=False, inplace=True)
-        self.overall_top_purchases = self.overall_top_purchases[self.overall_top_purchases[ITEM_COL] != 999999]
+        self.overall_top_purchases = self.overall_top_purchases[self.overall_top_purchases[ITEM_COL] != self.fake_id]
         self.overall_top_purchases = self.overall_top_purchases.item_id.tolist()
 
         self.user_item_matrix = self._prepare_matrix(data)  # pd.DataFrame
@@ -52,8 +53,8 @@ class MainRecommender:
         """Готовит user-item матрицу"""
         user_item_matrix = pd.pivot_table(data,
                                           index=USER_COL, columns=ITEM_COL,
-                                          values='quantity',
-                                          aggfunc='count',
+                                          values='price',
+                                          aggfunc='sum',
                                           fill_value=0
                                           )
 
@@ -136,7 +137,7 @@ class MainRecommender:
                                     user_items=user_item_matrix[userid],
                                     N=N,
                                     filter_already_liked_items=False,
-                                    filter_items=[self.itemid_to_id[999999]],
+                                    filter_items=[self.itemid_to_id[self.fake_id]],
                                     recalculate_user=True)[0]]
 
         res = self._extend_with_top_popular(res, N=N)
@@ -178,7 +179,7 @@ class MainRecommender:
 
         # Находим топ-N похожих пользователей
         similar_users = self.model.similar_users(self.userid_to_id[user], N=N+1)
-        similar_users = [rec for rec in similar_users[0]]
+        similar_users = [pair for pair in similar_users[0]]
         similar_users = similar_users[1:]   # удалим юзера из запроса
         
         for userid in similar_users:
